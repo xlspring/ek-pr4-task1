@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.ttf?jkiekg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon-arrow:before {
+  content: "\e900";
+  color: #f4f6fc;
+}
