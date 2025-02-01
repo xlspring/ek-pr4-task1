@@ -1,0 +1,46 @@
+@use 'colors';
+
+button {
+  border-radius: 41px;
+  padding: 16px 48px;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600;
+  border: none;
+
+  &.outline {
+    border: 2px #F4F6FC33 solid;
+    color: colors.$white;
+    background-color: colors.$tint-blue;
+
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  &.primary {
+    color: colors.$button-black;
+    background-color: colors.$yellow;
+  }
+
+  &.secondary {
+    color: colors.$white;
+    background-color: colors.$dark-blue;
+  }
+
+  &.icon {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    background-color: colors.$white;
+
+    font-family: "icomoon" !important;
+    color: #7f7f89;
+    user-select: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #5239FA;
+      color: colors.$white;
+    }
+  }
+}

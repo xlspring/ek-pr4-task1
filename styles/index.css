@@ -1,5 +1,44 @@
 @import url("../assets/fonts/poppins.css");
 @import url("../assets/fonts/icomoon.css");
+header {
+  height: 92px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 160px;
+  background-color: #1c1d53;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header * {
+  color: #ffffff;
+}
+
+nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 48px;
+}
+nav ul {
+  display: flex;
+  gap: 32px;
+}
+nav ul li {
+  list-style-type: none;
+  color: #BBBBCB;
+  cursor: pointer;
+  height: fit-content;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+}
+nav ul li:hover {
+  color: #ffffff;
+}
+nav ul.alt-colors li {
+  color: #272938;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -118,46 +157,76 @@ button.icon:hover {
   color: #ffffff;
 }
 
-header {
-  height: 92px;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0 160px;
+footer .upper-block {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 260px;
+  grid-row-gap: 89px;
   background-color: #1c1d53;
+  padding: 95px 160px 0;
+  position: relative;
+}
+footer .upper-block .logo-col {
+  grid-area: 1/1/2/2;
+}
+footer .upper-block .logo-col img {
+  width: 160px;
+}
+footer .upper-block .logo-col p {
+  color: #ffffff;
+  margin-top: 24px;
+  margin-left: 1px;
+}
+footer .upper-block .contact-chip {
+  grid-area: 2/1/3/2;
+  background-color: #fcd880;
   display: flex;
   align-items: center;
+  gap: 29px;
+  padding: 18px 37px 16px;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  min-width: 517px;
+}
+footer .upper-block .contact-chip p, footer .upper-block .contact-chip div {
+  width: fit-content;
+}
+footer .upper-block .contact-info {
+  height: 92px;
+  width: 517px;
+  margin-top: 86px;
+  padding: 18px 37px 16px 37px;
+}
+footer .upper-block .contact-info p {
+  all: revert;
+  margin: 0;
+  color: black;
+}
+footer .upper-block .letstalk-col {
+  grid-area: 1/2/3/3;
+}
+footer .upper-block .letstalk-col h2 {
+  color: #ffffff;
+}
+footer .upper-block .letstalk-col p {
+  color: #f5f6fb;
+  margin-top: 14px;
+  margin-left: 1px;
+  margin-bottom: 28px;
+}
+footer .lower-block {
+  height: 92px;
+  padding: 32px 160px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  display: flex;
   justify-content: space-between;
-}
-header * {
-  color: #ffffff;
-}
-
-nav {
-  display: inline-flex;
   align-items: center;
-  gap: 48px;
-}
-nav ul {
-  display: flex;
-  gap: 32px;
-}
-nav ul li {
-  list-style-type: none;
-  color: #BBBBCB;
-  cursor: pointer;
-  height: fit-content;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 28px;
-}
-nav ul li:hover {
-  color: #ffffff;
-}
-nav ul.alt-colors li {
-  color: #272938;
 }
 
-main .hero {
+section.hero {
   background-color: #1c1d53;
   display: flex;
   align-items: center;
@@ -165,20 +234,21 @@ main .hero {
   gap: 60px;
   padding: 128px 160px;
 }
-main .hero img {
+section.hero img {
   width: auto;
 }
-main .hero .row {
+section.hero .row {
   display: inline-flex;
   align-items: center;
   gap: 40px;
 }
-main .hero h1, main .hero p, main .hero a {
+section.hero h1, section.hero p, section.hero a {
   color: #ffffff;
 }
-main .hero p {
+section.hero p {
   margin: 24px 0 48px;
 }
+
 main .how-we-work {
   background-color: #f5f6fb;
   padding: 128px 0 128px 165px;
@@ -530,75 +600,6 @@ main .blog .content article a {
   color: #272938;
 }
 
-footer .upper-block {
-  display: grid;
-  grid-template-columns: repeat(2, 400px);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 260px;
-  grid-row-gap: 89px;
-  background-color: #1c1d53;
-  padding: 95px 160px 0;
-  position: relative;
-}
-footer .upper-block .logo-col {
-  grid-area: 1/1/2/2;
-}
-footer .upper-block .logo-col img {
-  width: 160px;
-}
-footer .upper-block .logo-col p {
-  color: #ffffff;
-  margin-top: 24px;
-  margin-left: 1px;
-}
-footer .upper-block .contact-chip {
-  grid-area: 2/1/3/2;
-  background-color: #fcd880;
-  display: flex;
-  align-items: center;
-  gap: 29px;
-  padding: 18px 37px 16px;
-  z-index: 2;
-  position: absolute;
-  bottom: 0;
-  min-width: 517px;
-}
-footer .upper-block .contact-chip p, footer .upper-block .contact-chip div {
-  width: fit-content;
-}
-footer .upper-block .contact-info {
-  height: 92px;
-  width: 517px;
-  margin-top: 86px;
-  padding: 18px 37px 16px 37px;
-}
-footer .upper-block .contact-info p {
-  all: revert;
-  margin: 0;
-  color: black;
-}
-footer .upper-block .letstalk-col {
-  grid-area: 1/2/3/3;
-}
-footer .upper-block .letstalk-col h2 {
-  color: #ffffff;
-}
-footer .upper-block .letstalk-col p {
-  color: #f5f6fb;
-  margin-top: 14px;
-  margin-left: 1px;
-  margin-bottom: 28px;
-}
-footer .lower-block {
-  height: 92px;
-  padding: 32px 160px;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 @keyframes sweep {
   0% {
     max-height: 0;
@@ -610,4 +611,4 @@ footer .lower-block {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=index.css.map */

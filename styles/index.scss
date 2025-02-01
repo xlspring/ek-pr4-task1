@@ -1,224 +1,17 @@
+@use './components/colors.scss';
+@use './components/header.scss';
+@use './components/text.scss';
+@use './components/buttons.scss';
+@use './components/footer.scss';
+@use './components/sections.scss';
+
 @import url("../assets/fonts/poppins.css");
 @import url("../assets/fonts/icomoon.css");
 
-$white: #ffffff;
-$royal-blue: #2104f6;
-$dark-blue: #272938;
-$grey: #f5f6fb;
-$yellow: #fcd880;
-$tint-blue: #1c1d53;
-$accent: #eff4fa;
-$button-black: #1B1C2A;
-
-* {
-  margin: 0;
-  padding: 0;
-
-  font-family: "Poppins", sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6, p, li, span {
-  color: #000000;
-}
-
-h1 {
-  font-weight: 600;
-  font-size: 54px;
-  line-height: 74px;
-}
-
-h2 {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 64px;
-}
-
-h3 {
-  font-weight: 600;
-  font-size: 38px;
-  line-height: 56px;
-}
-
-h4 {
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 56px;
-}
-
-h5 {
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 48px;
-
-  &.bold {
-    font-weight: 600;
-  }
-}
-
-h6 {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 36px;
-}
-
-p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-
-  &.bold {
-    font-weight: 500;
-  }
-}
-
-a {
-  text-decoration: none;
-
-  &:after {
-    content: "\e900";
-    font-family: "icomoon" !important;
-    margin-left: 16px;
-    color: inherit;
-    font-size: inherit;
-  }
-
-  &:visited {
-    color: $white;
-  }
-}
-
-label, span, {
-  font-weight: 500;
-
-  &.bold {
-    font-size: 18px;
-    line-height: 32px;
-  }
-}
-
-button {
-  border-radius: 41px;
-  padding: 16px 48px;
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: 600;
-  border: none;
-
-  &.outline {
-    border: 2px #F4F6FC33 solid;
-    color: $white;
-    background-color: $tint-blue;
-
-    font-size: 16px;
-    line-height: 28px;
-  }
-
-  &.primary {
-    color: $button-black;
-    background-color: $yellow;
-  }
-
-  &.secondary {
-    color: $white;
-    background-color: $dark-blue;
-  }
-
-  &.icon {
-    width: 48px;
-    height: 48px;
-    padding: 0;
-    background-color: $white;
-
-    font-family: "icomoon" !important;
-    color: #7f7f89;
-    user-select: none;
-    cursor: pointer;
-
-    &:hover {
-      background-color: #5239FA;
-      color: $white;
-    }
-  }
-}
-
-header {
-  height: 92px;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0 160px;
-  background-color: $tint-blue;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  * {
-    color: $white;
-  }
-}
-
-nav {
-  display: inline-flex;
-  align-items: center;
-  gap: 48px;
-
-  ul {
-    display: flex;
-    gap: 32px;
-
-    li {
-      list-style-type: none;
-      color: #BBBBCB;
-      cursor: pointer;
-      height: fit-content;
-
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 28px;
-
-      &:hover {
-        color: $white;
-      }
-    }
-
-    &.alt-colors li {
-      color: $dark-blue;
-    }
-  }
-}
-
 main {
 
-  .hero {
-    background-color: $tint-blue;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
-
-    padding: 128px 160px;
-
-    img {
-      width: auto;
-    }
-
-    .row {
-      display: inline-flex;
-      align-items: center;
-      gap: 40px;
-    }
-
-    h1, p, a {
-      color: $white;
-    }
-
-    p {
-      margin: 24px 0 48px;
-    }
-  }
-
   .how-we-work {
-    background-color: $grey;
+    background-color: colors.$grey;
     padding: 128px 0 128px 165px;
 
     display: flex;
@@ -230,16 +23,16 @@ main {
     }
 
     a {
-      color: $royal-blue;
+      color: colors.$royal-blue;
 
       &:after {
-        color: $royal-blue;
+        color: colors.$royal-blue;
         vertical-align: middle;
       }
     }
 
     h2, h5, p {
-      color: $dark-blue;
+      color: colors.$dark-blue;
     }
 
     .grid {
@@ -255,12 +48,12 @@ main {
         display: block;
         width: 50px;
         height: 50px;
-        background: url("../assets/img/marker-bg.svg") $royal-blue;
+        background: url("../assets/img/marker-bg.svg") colors.$royal-blue;
         border-radius: 8px;
 
         font-size: 18px;
         line-height: 50px;
-        color: $white;
+        color: colors.$white;
         text-align: center;
       }
 
@@ -284,11 +77,11 @@ main {
   }
 
   .our-projects {
-    background-color: $white;
+    background-color: colors.$white;
     padding: 128px 160px;
 
     h6, p {
-      color: $white;
+      color: colors.$white;
       text-wrap: wrap;
     }
 
@@ -297,7 +90,7 @@ main {
     }
 
     a {
-      color: $yellow;
+      color: colors.$yellow;
     }
 
     .header {
@@ -369,7 +162,7 @@ main {
 
   .features {
     padding: 128px 160px;
-    background-color: $grey;
+    background-color: colors.$grey;
 
     display: flex;
     align-items: center;
@@ -391,7 +184,7 @@ main {
 
       .card {
         padding: 58px 48px 48px 48px;
-        background-color: $white;
+        background-color: colors.$white;
 
         img {
           width: 35px;
@@ -402,7 +195,7 @@ main {
         }
 
         p {
-          color:$dark-blue
+          color: colors.$dark-blue
         }
       }
     }
@@ -415,10 +208,10 @@ main {
     flex-direction: row;
     gap: 110px;
 
-    background-color: $grey;
+    background-color: colors.$grey;
 
     * {
-      color: $dark-blue;
+      color: colors.$dark-blue;
     }
 
     .header {
@@ -476,7 +269,7 @@ main {
       gap: 16px;
 
       a {
-        color: $royal-blue;
+        color: colors.$royal-blue;
 
         &:after {
           content: "";
@@ -503,7 +296,7 @@ main {
           }
 
           .before {
-            color: $royal-blue;
+            color: colors.$royal-blue;
             margin-right: 60px;
           }
 
@@ -523,7 +316,7 @@ main {
 
           font-size: 18px;
           line-height: 32px;
-          color: $dark-blue;
+          color: colors.$dark-blue;
 
           box-sizing: border-box;
           overflow: hidden;
@@ -551,7 +344,7 @@ main {
     justify-content: stretch;
 
     p, h1, h5, :after {
-      color: $white;
+      color: colors.$white;
     }
 
     a {
@@ -572,7 +365,7 @@ main {
 
     .form {
       padding: 96px 96px 48px 96px;
-      background-color: $tint-blue;
+      background-color: colors.$tint-blue;
 
       display: flex;
       flex-direction: column;
@@ -593,7 +386,7 @@ main {
         padding: 18px 32px;
         border: 1.5px solid rgba(255, 255, 255, 0.05);
         border-radius: 8px;
-        color: $white;
+        color: colors.$white;
         background-color: transparent;
 
         &::placeholder {
@@ -641,101 +434,10 @@ main {
         }
 
         a {
-          color: $dark-blue;
+          color: colors.$dark-blue;
         }
       }
     }
-  }
-}
-
-footer {
-  .upper-block {
-    display: grid;
-    grid-template-columns: repeat(2, 400px);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 260px;
-    grid-row-gap: 89px;
-
-    background-color: $tint-blue;
-    padding: 95px 160px 0;
-
-    position: relative;
-
-    .logo-col {
-      grid-area: 1 / 1 / 2 / 2;
-
-      img {
-        width: 160px;
-      }
-
-      p {
-        color: $white;
-        margin-top: 24px;
-        margin-left: 1px;
-      }
-
-    }
-
-    .contact-chip {
-      grid-area: 2 / 1 / 3 / 2;
-      background-color: $yellow;
-      display: flex;
-      align-items: center;
-      gap: 29px;
-      padding: 18px 37px 16px;
-
-      z-index: 2;
-      position: absolute;
-      bottom: 0;
-
-      min-width: 517px;
-
-      p, div {
-        width: fit-content;
-      }
-    }
-
-    .contact-info {
-      height: 92px;
-      width: 517px;
-
-
-      margin-top: 86px;
-
-      padding: 18px 37px 16px 37px;
-
-      p {
-        all: revert;
-        margin: 0;
-        color: black;
-      }
-    }
-
-    .letstalk-col {
-      grid-area: 1 / 2 / 3 / 3;
-
-      h2 {
-        color: $white;
-      }
-
-      p {
-        color: $grey;
-        margin-top: 14px;
-        margin-left: 1px;
-        margin-bottom: 28px;
-      }
-    }
-  }
-
-  .lower-block {
-    height: 92px;
-    padding: 32px 160px;
-    box-sizing: border-box;
-    background-color: $white;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 }
 

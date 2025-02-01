@@ -1,0 +1,40 @@
+header {
+  height: 92px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 160px;
+  background-color: #1c1d53;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header * {
+  color: #ffffff;
+}
+
+nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 48px;
+}
+nav ul {
+  display: flex;
+  gap: 32px;
+}
+nav ul li {
+  list-style-type: none;
+  color: #BBBBCB;
+  cursor: pointer;
+  height: fit-content;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+}
+nav ul li:hover {
+  color: #ffffff;
+}
+nav ul.alt-colors li {
+  color: #272938;
+}
+
+/*# sourceMappingURL=header.css.map */

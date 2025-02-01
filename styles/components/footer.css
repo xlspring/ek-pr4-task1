@@ -1,0 +1,70 @@
+footer .upper-block {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 260px;
+  grid-row-gap: 89px;
+  background-color: #1c1d53;
+  padding: 95px 160px 0;
+  position: relative;
+}
+footer .upper-block .logo-col {
+  grid-area: 1/1/2/2;
+}
+footer .upper-block .logo-col img {
+  width: 160px;
+}
+footer .upper-block .logo-col p {
+  color: #ffffff;
+  margin-top: 24px;
+  margin-left: 1px;
+}
+footer .upper-block .contact-chip {
+  grid-area: 2/1/3/2;
+  background-color: #fcd880;
+  display: flex;
+  align-items: center;
+  gap: 29px;
+  padding: 18px 37px 16px;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  min-width: 517px;
+}
+footer .upper-block .contact-chip p, footer .upper-block .contact-chip div {
+  width: fit-content;
+}
+footer .upper-block .contact-info {
+  height: 92px;
+  width: 517px;
+  margin-top: 86px;
+  padding: 18px 37px 16px 37px;
+}
+footer .upper-block .contact-info p {
+  all: revert;
+  margin: 0;
+  color: black;
+}
+footer .upper-block .letstalk-col {
+  grid-area: 1/2/3/3;
+}
+footer .upper-block .letstalk-col h2 {
+  color: #ffffff;
+}
+footer .upper-block .letstalk-col p {
+  color: #f5f6fb;
+  margin-top: 14px;
+  margin-left: 1px;
+  margin-bottom: 28px;
+}
+footer .lower-block {
+  height: 92px;
+  padding: 32px 160px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*# sourceMappingURL=footer.css.map */

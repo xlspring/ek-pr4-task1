@@ -1,0 +1,35 @@
+@use 'colors';
+@use 'text';
+
+section {
+  &.hero {
+    background-color: colors.$tint-blue;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+    padding: 128px 160px;
+
+    img {
+      width: auto;
+    }
+
+    .row {
+      display: inline-flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    h1, p, a {
+      color: colors.$white;
+    }
+
+    p {
+      margin: 24px 0 48px;
+    }
+  }
+
+
+}

@@ -1,0 +1,46 @@
+@use './colors';
+
+header {
+  height: 92px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 160px;
+  background-color: colors.$tint-blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  * {
+    color: colors.$white;
+  }
+}
+
+nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 48px;
+
+  ul {
+    display: flex;
+    gap: 32px;
+
+    li {
+      list-style-type: none;
+      color: #BBBBCB;
+      cursor: pointer;
+      height: fit-content;
+
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 28px;
+
+      &:hover {
+        color: colors.$white;
+      }
+    }
+
+    &.alt-colors li {
+      color: colors.$dark-blue;
+    }
+  }
+}

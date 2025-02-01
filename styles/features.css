@@ -1,0 +1,252 @@
+@import url("../assets/fonts/poppins.css");
+@import url("../assets/fonts/icomoon.css");
+button {
+  border-radius: 41px;
+  padding: 16px 48px;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600;
+  border: none;
+}
+button.outline {
+  border: 2px rgba(244, 246, 252, 0.2) solid;
+  color: #ffffff;
+  background-color: #1c1d53;
+  font-size: 16px;
+  line-height: 28px;
+}
+button.primary {
+  color: #1B1C2A;
+  background-color: #fcd880;
+}
+button.secondary {
+  color: #ffffff;
+  background-color: #272938;
+}
+button.icon {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: "icomoon" !important;
+  color: #7f7f89;
+  user-select: none;
+  cursor: pointer;
+}
+button.icon:hover {
+  background-color: #5239FA;
+  color: #ffffff;
+}
+
+header {
+  height: 92px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 160px;
+  background-color: #1c1d53;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header * {
+  color: #ffffff;
+}
+
+nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 48px;
+}
+nav ul {
+  display: flex;
+  gap: 32px;
+}
+nav ul li {
+  list-style-type: none;
+  color: #BBBBCB;
+  cursor: pointer;
+  height: fit-content;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+}
+nav ul li:hover {
+  color: #ffffff;
+}
+nav ul.alt-colors li {
+  color: #272938;
+}
+
+footer .upper-block {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 260px;
+  grid-row-gap: 89px;
+  background-color: #1c1d53;
+  padding: 95px 160px 0;
+  position: relative;
+}
+footer .upper-block .logo-col {
+  grid-area: 1/1/2/2;
+}
+footer .upper-block .logo-col img {
+  width: 160px;
+}
+footer .upper-block .logo-col p {
+  color: #ffffff;
+  margin-top: 24px;
+  margin-left: 1px;
+}
+footer .upper-block .contact-chip {
+  grid-area: 2/1/3/2;
+  background-color: #fcd880;
+  display: flex;
+  align-items: center;
+  gap: 29px;
+  padding: 18px 37px 16px;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  min-width: 517px;
+}
+footer .upper-block .contact-chip p, footer .upper-block .contact-chip div {
+  width: fit-content;
+}
+footer .upper-block .contact-info {
+  height: 92px;
+  width: 517px;
+  margin-top: 86px;
+  padding: 18px 37px 16px 37px;
+}
+footer .upper-block .contact-info p {
+  all: revert;
+  margin: 0;
+  color: black;
+}
+footer .upper-block .letstalk-col {
+  grid-area: 1/2/3/3;
+}
+footer .upper-block .letstalk-col h2 {
+  color: #ffffff;
+}
+footer .upper-block .letstalk-col p {
+  color: #f5f6fb;
+  margin-top: 14px;
+  margin-left: 1px;
+  margin-bottom: 28px;
+}
+footer .lower-block {
+  height: 92px;
+  padding: 32px 160px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, span {
+  color: #000000;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 74px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 56px;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+}
+h5.bold {
+  font-weight: 600;
+}
+
+h6 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+p.bold {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+a:after {
+  content: "\e900";
+  font-family: "icomoon" !important;
+  margin-left: 16px;
+  color: inherit;
+  font-size: inherit;
+}
+a:visited {
+  color: #ffffff;
+}
+
+label, span {
+  font-weight: 500;
+}
+label.bold, span.bold {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+section.hero {
+  background-color: #1c1d53;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 128px 160px;
+}
+section.hero img {
+  width: auto;
+}
+section.hero .row {
+  display: inline-flex;
+  align-items: center;
+  gap: 40px;
+}
+section.hero h1, section.hero p, section.hero a {
+  color: #ffffff;
+}
+section.hero p {
+  margin: 24px 0 48px;
+}
+
+/*# sourceMappingURL=features.css.map */

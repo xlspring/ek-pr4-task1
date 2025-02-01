@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, span {
+  color: #000000;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 74px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 56px;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+}
+h5.bold {
+  font-weight: 600;
+}
+
+h6 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+p.bold {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+a:after {
+  content: "\e900";
+  font-family: "icomoon" !important;
+  margin-left: 16px;
+  color: inherit;
+  font-size: inherit;
+}
+a:visited {
+  color: #ffffff;
+}
+
+label, span {
+  font-weight: 500;
+}
+label.bold, span.bold {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+section.hero {
+  background-color: #1c1d53;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 128px 160px;
+}
+section.hero img {
+  width: auto;
+}
+section.hero .row {
+  display: inline-flex;
+  align-items: center;
+  gap: 40px;
+}
+section.hero h1, section.hero p, section.hero a {
+  color: #ffffff;
+}
+section.hero p {
+  margin: 24px 0 48px;
+}
+
+/*# sourceMappingURL=sections.css.map */
