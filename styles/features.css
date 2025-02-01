@@ -248,5 +248,134 @@ section.hero h1, section.hero p, section.hero a {
 section.hero p {
   margin: 24px 0 48px;
 }
+section.logo-string {
+  padding: 96px 160px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+section.image-text {
+  padding: 128px 160px;
+  display: flex;
+  gap: 80px;
+  background-color: #ffffff;
+}
+section.image-text .text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+section.image-text .text * {
+  color: #272938;
+}
+section.image-text img {
+  max-width: 575px;
+  object-fit: contain;
+}
+section.image-text.left {
+  flex-direction: row;
+}
+section.image-text.right {
+  flex-direction: row-reverse;
+}
+section.image-text.yellow {
+  background-color: rgba(252, 216, 128, 0.1);
+}
+section.image-text .grey {
+  background-color: #f5f6fb;
+}
+section.cards {
+  padding: 128px 160px;
+}
+section.cards h2 {
+  text-wrap: wrap;
+  text-align: center;
+  margin-bottom: 48px;
+}
+section.cards .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 32px;
+  grid-row-gap: 24px;
+}
+section.cards .grid .card {
+  padding: 58px 48px 48px 48px;
+  background-color: #f5f6fb;
+}
+section.cards .grid .card img {
+  width: 35px;
+}
+section.cards .grid .card h6 {
+  margin: 25px 0 12px;
+}
+section.cards .grid .card p {
+  color: #272938;
+}
+section.faq {
+  padding: 128px 160px;
+  display: flex;
+  flex-direction: row;
+  gap: 110px;
+}
+section.faq .header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+section.faq .header a {
+  color: #2104f6;
+}
+section.faq .header a:after {
+  content: "";
+}
+section.faq .content {
+  width: 100%;
+  user-select: none;
+}
+section.faq .content details summary {
+  list-style-type: none;
+  padding: 32px 0 32px 27px;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+section.faq .content details summary * {
+  font-size: 24px;
+  line-height: 36px;
+}
+section.faq .content details summary .before {
+  color: #2104f6;
+  margin-right: 60px;
+}
+section.faq .content details summary .plus-icon {
+  font-family: "icomoon" !important;
+  margin-left: auto;
+  transition: all 0.05s ease-in;
+}
+section.faq .content details summary::marker, section.faq .content details summary::-webkit-details-marker {
+  display: none;
+}
+section.faq .content details p {
+  padding: 0 0 48px 111px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #272938;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+section.faq .content details[open] .plus-icon {
+  rotate: 45deg;
+}
+section.faq .content details[open] summary {
+  padding-bottom: 16px;
+}
+section.faq .content details[open] p {
+  animation: sweep 1s linear;
+}
+section.faq .content details:not(:last-of-type) {
+  border-bottom: 2px #ECECF1 solid;
+}
 
 /*# sourceMappingURL=features.css.map */
